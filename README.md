@@ -17,13 +17,25 @@ Requirements
 
 Setup & Run
 
-git clone https://github.com/savvyvagish/mla-news-scrapper.git
-cd mla-news-scrapper
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/savvyvagish/mla-news-scrapper.git
+    cd mla-news-scrapper
+    ```
 
-pip install requests google-genai pandas openpyxl python-dotenv
+2.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Note: If `requirements.txt` is missing, install manually: `pip install requests google-genai pandas openpyxl python-dotenv`)*
 
-Create a .env file and add:
-GEMINI_API_KEY=your_api_key_here
+3.  **Configure API Key**:
+    *   Create a `.env` file in the root directory.
+    *   Add your Google Gemini API key:
+        ```bash
+        GEMINI_API_KEY=your_api_key_here
+        ```
+
 
 Run the script:
 python3 main.py
