@@ -1,4 +1,4 @@
-MLA News Scraper
+# MLA News Scraper
 
 A Python tool to fetch and analyze news articles about Indian MLAs using Google News RSS and Google Gemini.
 
@@ -21,14 +21,14 @@ Requirements
 Setup
 
 Clone the repo:
-git clone https://github.com/savvyvagish/mla-news-scrapper.git
+```git clone https://github.com/savvyvagish/mla-news-scrapper.git```
 cd mla-news-scrapper
 
 Install dependencies:
-pip install requests google-genai pandas openpyxl python-dotenv
+```pip install requests google-genai pandas openpyxl python-dotenv```
 
 Create a .env file:
-GEMINI_API_KEY=your_api_key_here
+```GEMINI_API_KEY=your_api_key_here```
 
 Usage
 
@@ -38,7 +38,7 @@ Make sure mlas.csv exists with columns like:
 	•	party
 
 Run:
-python3 main.py
+```python3 main.py```
 
 Results will be saved in output.xlsx.
 
